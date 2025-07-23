@@ -26,7 +26,6 @@ public class XmlService {
 
     private static final String NAMESPACE_NFE = "http://www.portalfiscal.inf.br/nfe";
     private static final DateTimeFormatter DATE_TIME_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ssXXX");
-    private static final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
     public String gerarXmlNfce(Nfce nfce) {
         try {

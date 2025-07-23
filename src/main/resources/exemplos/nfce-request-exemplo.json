@@ -1,0 +1,66 @@
+{
+  "numero": 123,
+  "serie": 1,
+  "natureza_operacao": "Venda de mercadoria",
+  "emitente": {
+    "cnpj": "12345678000195",
+    "razao_social": "EMPRESA EXEMPLO LTDA",
+    "nome_fantasia": "Loja Exemplo",
+    "logradouro": "Rua das Flores",
+    "numero": "123",
+    "bairro": "Centro",
+    "municipio": "São Paulo",
+    "uf": "SP",
+    "cep": "01234567",
+    "codigo_municipio": 3550308,
+    "inscricao_estadual": "123456789012",
+    "regime_tributario": "SIMPLES_NACIONAL"
+  },
+  "destinatario": {
+    "cpf_cnpj": "12345678901",
+    "nome": "JOAO DA SILVA"
+  },
+  "itens": [
+    {
+      "numero_item": 1,
+      "codigo_produto": "PROD001",
+      "descricao": "Produto de Exemplo",
+      "ncm": "12345678",
+      "cfop": "5102",
+      "unidade_comercial": "UN",
+      "quantidade_comercial": 2.0,
+      "valor_unitario_comercial": 25.50,
+      "valor_desconto": 1.00,
+      "origem_mercadoria": "NACIONAL",
+      "cst_icms": "102",
+      "modalidade_bc_icms": 3,
+      "base_calculo_icms": 50.00,
+      "aliquota_icms": 18.00
+    },
+    {
+      "numero_item": 2,
+      "codigo_produto": "PROD002",
+      "descricao": "Outro Produto",
+      "ncm": "87654321",
+      "cfop": "5102",
+      "unidade_comercial": "UN",
+      "quantidade_comercial": 1.0,
+      "valor_unitario_comercial": 15.75,
+      "origem_mercadoria": "NACIONAL",
+      "cst_icms": "102"
+    }
+  ],
+  "pagamentos": [
+    {
+      "meio_pagamento": "DINHEIRO",
+      "valor": 30.25
+    },
+    {
+      "meio_pagamento": "CARTAO_CREDITO",
+      "valor": 35.00,
+      "cnpj_credenciadora": "12345678000100",
+      "bandeira_operadora": "01",
+      "numero_autorizacao": "123456"
+    }
+  ]
+}

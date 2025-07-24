@@ -1,12 +1,12 @@
 # NFC-e Java - Sistema Integrador para Nota Fiscal de Consumidor Eletrônica
 
-## 📋 Sobre o Projeto
+## Sobre o Projeto
 
-Este é um sistema completo para integração com NFC-e (Nota Fiscal de Consumidor Eletrônica) desenvolvido em Java com Spring Boot. O sistema é independente do ACBr e implementa todas as funcionalidades necessárias para emissão, validação e gerenciamento de NFC-e.
+Integração com NFC-e (Nota Fiscal de Consumidor Eletrônica) desenvolvido em Java com Spring Boot.
 
-## 🚀 Funcionalidades
+## Funcionalidades
 
-### ✅ Funcionalidades Implementadas
+### Funcionalidades Implementadas
 
 - **Geração de NFC-e**: Criação completa de notas fiscais eletrônicas
 - **Chave de Acesso**: Geração e validação automática da chave de acesso
@@ -19,7 +19,7 @@ Este é um sistema completo para integração com NFC-e (Nota Fiscal de Consumid
 - **Numeração**: Controle automático de numeração sequencial
 - **Status**: Controle de status da NFC-e (Rascunho → Assinada → Enviada → Autorizada)
 
-### 🔄 Fluxo de Processamento
+### Fluxo de Processamento
 
 1. **Criação**: Criação da NFC-e com validação dos dados
 2. **Assinatura**: Assinatura digital do XML (simulada)
@@ -27,7 +27,7 @@ Este é um sistema completo para integração com NFC-e (Nota Fiscal de Consumid
 4. **Autorização**: Recebimento da autorização (simulada)
 5. **Cancelamento**: Cancelamento de notas autorizadas (simulado)
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **Java 17**
 - **Spring Boot 3.5.3**
@@ -42,7 +42,7 @@ Este é um sistema completo para integração com NFC-e (Nota Fiscal de Consumid
 - **SpringDoc OpenAPI** (Swagger)
 - **JUnit 5** (testes)
 
-## 📦 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 src/main/java/com/leandrosnazareth/nfce_java/
@@ -74,7 +74,7 @@ src/main/java/com/leandrosnazareth/nfce_java/
     └── NumeracaoService.java
 ```
 
-## 🚀 Como Executar
+## Como Executar
 
 ### Pré-requisitos
 
@@ -99,7 +99,7 @@ mvn spring-boot:run
 - Swagger UI: http://localhost:8080/nfce-api/swagger-ui/index.html
 - H2 Console: http://localhost:8080/nfce-api/h2-console
 
-## 📖 Documentação da API
+## Documentação da API
 
 ### Endpoints Principais
 
@@ -123,7 +123,7 @@ mvn spring-boot:run
 - `GET /api/v1/qrcode/imagem-base64` - Gerar imagem Base64
 - `POST /api/v1/qrcode/validar` - Validar QR Code
 
-## 💡 Exemplo de Uso
+## Exemplo de Uso
 
 ### Criando uma NFC-e
 
@@ -158,7 +158,7 @@ curl -X POST "http://localhost:8080/nfce-api/api/v1/nfce" \
 }
 ```
 
-## ⚙️ Configuração
+## Configuração
 
 ### application.properties
 
@@ -175,7 +175,7 @@ nfce.numero-inicial=1
 nfce.webservice.url.autorizacao=https://homologacao.nfce.fazenda.sp.gov.br/ws/nfceautorizacao.asmx
 ```
 
-## 🧪 Testes
+## Testes
 
 Execute os testes com:
 
@@ -188,7 +188,7 @@ Os testes incluem:
 - Validação de QR Code
 - Testes de integração da API
 
-## 📊 Status da NFC-e
+## Status da NFC-e
 
 A NFC-e passa pelos seguintes status:
 
@@ -200,14 +200,14 @@ A NFC-e passa pelos seguintes status:
 6. **CANCELADA** - NFC-e cancelada
 7. **DENEGADA** - NFC-e denegada pela SEFAZ
 
-## 🔐 Segurança
+## Segurança
 
 - Validação completa de dados de entrada
 - Tratamento de exceções personalizado
 - Logs estruturados para auditoria
 - Validação de chave de acesso com dígito verificador
 
-## 🎯 Roadmap
+## Roadmap
 
 ### Futuras Implementações
 
@@ -223,5 +223,4 @@ A NFC-e passa pelos seguintes status:
 - [ ] Múltiplas empresas (multi-tenant)
 
 ---
-
-⭐ **Se este projeto foi útil para você, considere dar uma estrela no GitHub!**
+ **Se este projeto foi útil para você, considere dar uma estrela no GitHub!**
